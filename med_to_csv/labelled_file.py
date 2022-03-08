@@ -20,6 +20,7 @@ def parse_labelled(list_ligns:List)-> Dict or List(Dict):
     #Parse Medassociate data all labelled types of files
     num = 0
     while num < len(list_ligns):
+        print("Coucou test windows")
         row = list_ligns[num]
         row_split = row.rsplit(" ")
         #Useless first row
