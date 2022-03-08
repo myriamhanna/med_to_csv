@@ -1,7 +1,7 @@
 .. role:: raw-html(raw)
    :format: html
 
-|Contributors| |Forks| |Stargazers| |Issues| |GPLv3.0 License| |Doc|
+|Contributors| |Forks| |Stargazers| |Issues| |GPLv3.0 License| |Doc| |DOI|
 
 .. _top:
 
@@ -118,14 +118,24 @@ Installation
 
       pip install numpy argparse yaml pandas
       pip install Gooey #For graphical interface
+      cd path/to/directory_of_git_clone
+and one of the two lines below :
+   .. code-block:: bash
+      
+      python setup.py install 
+      python setup.py install --user #For windows users
+or
+   .. code-block:: bash
+      
+      pip install .
 
 
 .. raw:: html
 
    <p align="right">(<a href="#top">back to top</a>)</p>
 
-Make Executable
-^^^^^^^^^^^^^^^^
+Make Executable (Portable)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To make a gui onefile executable run these commands in terminal.
 
@@ -309,3 +319,5 @@ Acknowledgments
 .. |Doc| image:: https://readthedocs.org/projects/med-to-csv/badge/?version=latest
    :target: https://med-to-csv.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
+.. |DOI| image:: https://zenodo.org/badge/447657017.svg
+   :target: https://zenodo.org/badge/latestdoi/447657017
