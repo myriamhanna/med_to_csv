@@ -58,6 +58,7 @@ You forgot to give me your data
         }]
     )
 def main() :
+    print("Coucou test windows run main")
     """main function, to display a select file/directory window"""
     parser = GooeyParser(prog="med_to_csv", 
                          formatter_class=argparse.ArgumentDefaultsHelpFormatter,
@@ -107,4 +108,5 @@ Option to indicate a path to the group directory which contains data files from 
         raise Exception(BOOM)
 
 if __name__ == "__main__":
+    print("Coucou test windows - first run")
     main()
