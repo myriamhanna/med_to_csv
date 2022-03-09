@@ -24,7 +24,7 @@ jobs:
     
     - name: Install user dependencies
       run: |
-          if (exist requirements.txt) (pip3 install -r requirements.txt)
+          IF EXIST requirements.txt (pip3 install -r requirements.txt)
 
     - name: Make package
       run: |
