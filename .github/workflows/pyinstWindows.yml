@@ -24,9 +24,9 @@ jobs:
     
     - name: Install user dependencies
       run: |
-          if [ -f requirements.txt ]; then
+          #if [ -f requirements.txt ]; then
               pip3 install -r requirements.txt
-          fi # [ -f requirements.txt ]
+          #fi # [ -f requirements.txt ]
 
     - name: Make package
       run: |
