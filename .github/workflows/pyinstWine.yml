@@ -1,4 +1,4 @@
-name: Build GUI Windows bin with Pyinstaller
+name: Build GUI Windows bin with Pyinstaller by wine
 on:
   push:
     branches:
