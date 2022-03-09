@@ -1,0 +1,38 @@
+name: Build GUI Windows bin with Pyinstaller
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      tags:
+        required: False
+        description: 'test build tags'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Gooey
+      run: |
+          pip3 install gooey
+          pip3 install Pyinstaller
+    
+    - name: Install user dependencies
+      run: |
+          if [ -f requirements.txt ]; then
+              pip3 install -r requirements.txt
+          fi # [ -f requirements.txt ]
+
+    - name: Make package
+      run: |
+          pyinstaller --clean -y --dist ./dist/windows build_gui.spec
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: med_to_csv_windows
+        path: ./dist/windows

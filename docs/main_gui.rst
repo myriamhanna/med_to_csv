@@ -1,8 +1,9 @@
 Graphique User Interface (GUI)
 ====================================
 
-How to use it
----------------------
+How to use GUI
+-----------------
+
 .. code-block:: bash
 
     med_to_csv_gui
